@@ -1,0 +1,22 @@
+<!-- Header -->
+<header>
+    <div class="search-bar-container">
+        <h1>Books Finder</h1>
+        
+        <div class="search-bar">
+            <div>
+                <p>Please enter a genre:  </p>
+            </div>
+            
+                <input id="user-choice" class="user-choice" type="text" [(ngModel)]="userChoice" placeholder="horror,fantasy,love..." required>
+                <button (click)="search()">search</button>
+        </div>
+
+        <div>
+            <img src="../../assets/img/book-bg.png" alt="book">
+        </div>
+    </div>
+</header>
+<!-- Header -->
+
+<app-genre-list [list]="booksFound"></app-genre-list>

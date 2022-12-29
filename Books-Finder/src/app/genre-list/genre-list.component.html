@@ -1,0 +1,25 @@
+<!-- Main -->
+<main>
+    <div id="books-container" *ngFor="let book of list">
+        <div id="books-card" (click)="showDetails(book.key)">
+            <div class="card-content">
+                 {{book.title}}
+                <p *ngFor="let author of book.authors">{{author.name}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-1" class="{{showDetail}}">
+        <div class="overlay"></div>
+        
+        <div id="content" class="content">
+            <!-- <div id="description"></div> -->
+            <div id="close-btn" class="close-btn" (click)="close()" >&times;</div>
+        <div class="description-container"><h2>{{title}}</h2>
+            <p>{{description}}</p>
+        </div>
+            <img src="{{srcImg}}">
+        </div>
+    </div>
+</main>
+<!-- Main -->

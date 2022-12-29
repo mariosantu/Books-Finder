@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $clr-bg;
+    font-family: "Convergence", sans-serif;
+    color: white;
+}
+
+img {
+    display: inline-block;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
