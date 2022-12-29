@@ -4,6 +4,39 @@ Questa semplice applicazione permette all'utente inserendo un genere letterario 
 
 Inoltre una volta trovati i titoli richiesti è possibile, facendo click su di essi, conoscere la descrizione del titolo per approfondirne il contenuto e la cover del libro selezionato.
 
+## Come è stat sviluppata l'applicazione? 
+L'applicazione è stata sviluppata utilizzando il framework 
+Angular e Node.js.
+
+## Librerie esterne utilizzate :
+Non ci sono state librerie terze utilizzate, ma è stata 
+utilizzata l'api del sito "Open Library" per ricavarne i dati.
+
+### Componenti: 
+  - header,
+  - genre-list
+
+#### Header
+ Ha lo scopo di visualizzare l'intestazione dell'app e contiene 
+ anche la searchbar dove inserire la categoria di lettura che piu si preferisce.
+#### Genre-list
+Contiene i libri ricercati per categoria e al click su di essi viene 
+visualizzato il dettaglio del libro con titolo descrizione e immagine.
+
+### Servizi : 
+  - Search-genre,
+  - get-description-books.
+
+#### Search-genre
+ha il compito di strutturare l'url inserendo la query utente nello stesso 
+per ottenere i dati neccessari al componente che lo utilizza per poterne usufruire.
+
+#### get-description-books
+ha il compito di strutturare l'url inserendo la key del libro selezionato dall' utente  
+per ottenere i dati neccessari al componente che lo utilizza per poterne usufruire.
+
+
+
 ## Configurazione e prova in locale
 Per la configurazione si dovrà clonare la repo github del proggetto 
 e per prima cosa lanciare il comando da terminale `npm install` e 
