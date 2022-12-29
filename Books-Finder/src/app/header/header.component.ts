@@ -8,8 +8,9 @@ import { SearchGenreService } from '../services/search-genre.service';
 })
 export class HeaderComponent {
 
-
+// user genre choice
 userChoice:string = '';
+// books founded by search function
 booksFound?:any;
 
 constructor(private _SearchGenre:SearchGenreService ) { }

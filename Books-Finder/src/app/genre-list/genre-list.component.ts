@@ -8,8 +8,10 @@ import { GetDescriptionBookService } from '../services/get-description-book.serv
 })
 export class GenreListComponent {
 
+  
   @Input() list?:any;
 
+  // change class to show/hide description container
   showDetail:string = "hidden";
 
   title:string = '';
@@ -18,6 +20,7 @@ export class GenreListComponent {
 
   constructor(private _SearchDescription:GetDescriptionBookService ) {}
 
+  // get description details
   showDetails(key:string) :void {
     this.showDetail = "show";
 
@@ -33,6 +36,7 @@ export class GenreListComponent {
     )
   }
 
+  // close description details container
   close(): void {
     this.showDetail = "hidden";
   }
